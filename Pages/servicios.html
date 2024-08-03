@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Terapia Transgeneracional</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #6482AD; /* Color de fondo de la barra de navegación */
+        }
+        .navbar-brand {
+            font-family: 'Caveat', cursive; /* Aplicar la fuente Caveat */
+            color: #fff; /* Color del texto de la barra de navegación */
+        }
+        .navbar-brand:hover {
+            color: #d4d4d4; /* Color del texto al pasar el ratón por encima */
+        }
+        .navbar-nav .nav-link {
+            color: #fff; /* Color del texto de la barra de navegación */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #d4d4d4; /* Color del texto al pasar el ratón por encima */
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+            background: url(assets/fondoservicios.avif) no-repeat center center fixed;
+            background-size: cover;
+        }
+        .services-section {
+            padding: 60px 0;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar la sección */
+        }
+        .service-card {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .service-card .card-body {
+            padding: 20px;
+        }
+        .service-card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd; /* Línea de separación entre imagen y texto */
+        }
+        .footer-section {
+            background-color: #343a40; /* Color de fondo del pie de página */
+            color: #fff; /* Color del texto del pie de página */
+            padding: 20px;
+        }
+        .footer-section h5 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+        .footer-section a {
+            color: #17a2b8; /* Color de los enlaces */
+            text-decoration: none; /* Eliminar subrayado de los enlaces */
+        }
+        .footer-section a:hover {
+            text-decoration: underline; /* Subrayar enlaces al pasar el ratón */
+        }
+        .social-btn {
+            margin-right: 10px;
+        }
+        .btn-outline-light {
+            border-color: #fff;
+            color: #fff;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5); /* Efecto de relieve */
+        }
+        .btn-outline-light:hover {
+            background-color: #fff;
+            color: #343a40; /* Cambiar color del texto al pasar el ratón */
+        }
+        @media (max-width: 768px) {
+            .footer-section h5 {
+                font-size: 1rem;
+            }
+        }
+        @media (max-width: 576px) {
+            .footer-section h5 {
+                font-size: 0.875rem;
+            }
+            .social-btn {
+                margin-right: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Terapia Transgeneracional</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Servicios <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/sobremi.html">Sobre mí</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="../Pages/informacion.html">Información</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="services-section text-center">
+            <h2>Servicios</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Servicio 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card service-card">
+                            <img src="assets/terapiaindividual.jpg" class="card-img-top" alt="Imagen del Servicio 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicio 1</h5>
+                                <p class="card-text">Nuestro servicio de terapia individual ofrece un espacio seguro y confidencial donde puedes explorar tus pensamientos y sentimientos con un profesional capacitado. Ya sea que enfrentes desafíos emocionales, estés buscando crecimiento personal o necesites apoyo para superar obstáculos, estamos aquí para ayudarte a encontrar claridad, fortalecer tu bienestar y lograr tus objetivos personales. Trabajamos contigo para desarrollar estrategias efectivas que se adapten a tus necesidades únicas.</p>
+                                <a href="#" class="btn btn-outline-primary">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card service-card">
+                            <img src="assets/terapiagrupal.jpg" alt="imagen grupal">
+                            <div class="card-body">
+                                <h5 class="card-title">Servicio 2</h5>
+                                <p class="card-text">Nuestra terapia grupal proporciona un entorno de apoyo donde los participantes pueden compartir sus experiencias y aprender de las vivencias de los demás. Guiada por un terapeuta profesional, esta modalidad fomenta la conexión, el entendimiento y la empatía entre los miembros del grupo. Es una oportunidad para recibir apoyo emocional, desarrollar habilidades sociales y encontrar nuevas perspectivas mientras trabajas en tus metas personales junto a otros que comparten desafíos similares.
+
+                                </p>
+                                <a href="#" class="btn btn-outline-primary">Más información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>Para más información, contáctanos a través del correo electrónico:</p>
+                    <p><a href="mailto:info@terapiatransgeneracional.com">info@terapiatransgeneracional.com</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <a href="https://www.facebook.com/tu_pagina" class="btn btn-outline-light social-btn" target="_blank">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/tu_pagina" class="btn btn-outline-light social-btn" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Información</h5>
+                    <p>© 2024 Terapia Transgeneracional</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
